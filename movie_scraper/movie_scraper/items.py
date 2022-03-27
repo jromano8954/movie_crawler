@@ -5,6 +5,12 @@
 
 import scrapy
 
+class Celebrity(scrapy.Item):
+    name = scrapy.Field()
+    highest_rated = scrapy.Field()
+    lowest_rated = scrapy.Field()
+    birthday = scrapy.Field()
+    birthplace = scrapy.Field()
 
 class MovieScraperItem(scrapy.Item):
     # define the fields for your item here like:
